@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Quiz Application</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="quiz-wrapper container mt-5 p-4">
+        <div id="start-screen" class="screen active text-center">
+            <h1>Welcome to the Quiz</h1>
+            <button id="start-button" class="btn btn-primary">Start Quiz</button>
+        </div>
+        <div id="quiz-screen" class="screen">
+            <div class="score mb-3">
+                Score: <span id="score">0</span>
+            </div>
+            <div id="progress-bar" class="mb-3">
+                <div class="progress-bar" role="progressbar"></div>
+            </div>
+            <div id="timer" class="mb-3">
+                Time Left: <span id="timer-value">00:15</span>
+            </div>
+            <div id="quiz-container"></div>
+            <div id="feedback" class="mb-3"></div>
+            <button id="next-button" class="btn btn-secondary d-none">Next Question</button>
+        </div>
+        <div id="result-screen" class="screen text-center">
+            <h2>Quiz Complete!</h2>
+            <p>You scored <span id="score"></span> out of <span id="total"></span>.</p>
+            <button class="btn btn-primary" onclick="location.reload()">Restart Quiz</button>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

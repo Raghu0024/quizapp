@@ -1,0 +1,256 @@
+body {
+    background-color: #f0f4f8;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    color: #333;
+}
+
+.quiz-wrapper {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-width: 600px;
+    width: 100%;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.screen {
+    padding: 20px;
+    display: none;
+}
+
+.screen.active {
+    display: block;
+    animation: fadeIn 1s ease-in-out;
+}
+
+#progress-bar {
+    height: 10px;
+    background-color: #dbe5f1;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.progress-bar {
+    height: 100%;
+    background-color: #007bff;
+    width: 0;
+    border-radius: 5px;
+    transition: width 0.5s ease;
+}
+
+#timer {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.question {
+    font-size: 1.25rem;
+    margin-bottom: 20px;
+}
+
+.option {
+    margin-bottom: 10px;
+}
+
+.option button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.option button.correct {
+    background-color: #28a745; /* Dark green for correct answers */
+    color: #fff;
+}
+
+.option button.incorrect {
+    background-color: #dc3545; /* Red for incorrect answers */
+    color: #fff;
+}
+
+.feedback {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.feedback-correct {
+    color: #28a745; /* Green for correct feedback */
+}
+
+.feedback-incorrect {
+    color: #dc3545; /* Red for incorrect feedback */
+}
+
+#score {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+#total {
+    font-size: 1.25rem;
+}
+
+button.btn {
+    background-color: #007bff; /* Blue color for buttons */
+    color: #fff;
+}
+
+button.btn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+button.d-none {
+    display: none;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+/* Base Styles */
+body {
+    background-color: #f8f9fa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.quiz-wrapper {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-width: 600px;
+    width: 100%;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.screen {
+    padding: 20px;
+    display: none;
+}
+
+.screen.active {
+    display: block;
+    animation: fadeIn 1s ease-in-out;
+}
+
+
+    /* Base Styles */
+body {
+    background-color: #f8f9fa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.quiz-wrapper {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-width: 600px;
+    width: 100%;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.screen {
+    padding: 20px;
+    display: none;
+}
+
+.screen.active {
+    display: block;
+    animation: fadeIn 1s ease-in-out;
+}
+
+#progress-bar {
+    height: 10px;
+    background-color: #007bff; /* Default color for progress bar */
+}
+
+.option button.correct {
+    background-color: darkgreen;
+    color: white;
+    animation: pulse 0.5s ease-in-out;
+}
+
+.option button.incorrect {
+    background-color: red;
+    color: white;
+    animation: pulse 0.5s ease-in-out;
+}
+
+.feedback {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.feedback-correct {
+    color: green;
+}
+
+.feedback-incorrect {
+    color: red;
+}
+
+.animate-question {
+    animation: slideIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
